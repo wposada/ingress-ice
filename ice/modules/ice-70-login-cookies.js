@@ -32,6 +32,7 @@ function loadCookies() {
       var line = stream.readLine().split('=');
       if(line[0] === 'SACSID') {
         config.SACSID = line[1];
+        console.log('SACID:'+line[1]);
       } else if(line[0] === 'csrftoken') {
         config.CSRF = line[1];
       }
