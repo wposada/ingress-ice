@@ -7,7 +7,7 @@
 /*global quit */
 /*global args */
 
-var cookiespath = '.iced_cookies';
+var cookiespath = '/conf/.iced_cookies';
 var config = configure(args[1]);
 
 // Check if no login/password/link provided
