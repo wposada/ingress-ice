@@ -2,7 +2,7 @@
 
 # ingress-ice start script by Nikitakun
 # Launch this script from console ( $ chmod +x ingress-ice&&./ingress-ice )
-FILE="$HOME/.ingress-ice.conf"
+FILE="conf/.ingress-ice.conf"
 
 SCRIPT_HOME=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 COUNT=""
