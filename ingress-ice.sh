@@ -38,10 +38,11 @@ launch() {
     ARGS="$1 $2"
     if [ ! $LOOP ]
     then
-      $PHANTOMJS --ignore-ssl-errors=true --ssl-protocol=any "$SCRIPT_HOME/ice/ice.js" $ARGS; exit;
+      $PHANTOMJS --ignore-ssl-errors=true --ssl-protocol=any "$SCRIPT_HOME/ice/ice.js" $ARGS; echo "fin1";exit;
     else
       while :; do
-        $PHANTOMJS --ignore-ssl-errors=true --ssl-protocol=any "$SCRIPT_HOME/ice/ice.js" $ARGS
+        $PHANTOMJS --ignore-ssl-errors=true f--ssl-protocol=any "$SCRIPT_HOME/ice/ice.js" $ARGS
+        echo "fin";
       done
     fi
   else
