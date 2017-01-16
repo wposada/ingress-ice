@@ -38,7 +38,7 @@ launch() {
     ARGS="$1 $2"
     if [ ! $LOOP ]
     then
-      $PHANTOMJS --ignore-ssl-errors=true --ssl-protocol=any "$SCRIPT_HOME/ice/ice.js" $ARGS; cp /conf/.iced_cookies conf/;echo "fincp";git add .;git commit -m "micom";git push origin gnuarm;exit;
+      $PHANTOMJS --ignore-ssl-errors=true --ssl-protocol=any "$SCRIPT_HOME/ice/ice.js" $ARGS; cp /conf/.iced_cookies /gits/3874aad99ad5ce803a6e482e7c7dc241/;echo "fincp";cd /gits/3874aad99ad5ce803a6e482e7c7dc241;git add .;git commit -m "migits";git push;exit;
     else
       while :; do
         $PHANTOMJS --ignore-ssl-errors=true f--ssl-protocol=any "$SCRIPT_HOME/ice/ice.js" $ARGS
