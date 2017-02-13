@@ -9,8 +9,8 @@ COUNT=""
 MACHINE_TYPE=`uname -m`
 
 PHANTOMJS="$SCRIPT_HOME/phantomjs"
-PATH_GITS="/Volumes/TOSHIBA EXT/Docker/gits"
-PATH_CONF="/Volumes/TOSHIBA EXT/Docker/ingress-ice/conf"
+PATH_GITS="/Volumes/TOSHIBA\ EXT/Docker/gits"
+PATH_CONF="/Volumes/TOSHIBA\ EXT/Docker/ingress-ice/conf"
 if (command -v dialog >/dev/null)
 then
   DIALOG=${DIALOG=dialog}
